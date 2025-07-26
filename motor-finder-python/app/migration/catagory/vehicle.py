@@ -4,7 +4,7 @@ from pymongo import IndexModel
 # from app.database.connections import connect
 
 async def seed_vehicle_types():
-    client = AsyncIOMotorClient("mongodb+srv://admin:5K09K2IthNTg@motors-finder-db.peqncve.mongodb.net/motorfinder?retryWrites=true&w=majority&appName=motors-finder-db")
+    client = db url
     # client = await connect()
     db = client["motorfinder"]
     collection = db["vehicle_type"]
