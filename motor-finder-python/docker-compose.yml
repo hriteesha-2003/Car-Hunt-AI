@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  fastapi-app:
+    build: .
+    container_name: motorfinder-api-prod
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
+    restart: always
+    volumes:
+      - .:/app
