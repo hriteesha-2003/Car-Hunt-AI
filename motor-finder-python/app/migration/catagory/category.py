@@ -6,7 +6,7 @@ from app.database.connections import connect
 
 async def seed_data():
     # Connect to MongoDB (using your connection method)
-    # client = AsyncIOMotorClient("mongodb+srv://admin:5K09K2IthNTg@motors-finder-db.peqncve.mongodb.net/motorfinder?retryWrites=true&w=majority&appName=motors-finder-db")
+
     client = await connect()
     db = client["motorfinder"]
     collection = db["category"]
